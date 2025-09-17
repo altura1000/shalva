@@ -5,7 +5,7 @@ import { Star, Phone, Mail, MessageCircle, Heart, Shield, Users, CheckCircle } f
 import Image from "next/image";
 
 const IS_PRODUCTION = true;
-const BASE = IS_PRODUCTION ? "/one-god" : "";
+const BASE = IS_PRODUCTION ? "/shalva" : "";
 
 export default function ShalvaLandingPage() {
   return (

@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Star, Phone, Mail, MessageCircle, Heart, Shield, Users, CheckCircle } from "lucide-react";
 import Image from "next/image";
 
-const IS_PRODUCTION = false;
+const IS_PRODUCTION = true;
 const BASE = IS_PRODUCTION ? "/one-god" : "";
 
 export default function ShalvaLandingPage() {

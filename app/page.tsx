@@ -76,9 +76,9 @@ export default function ShalvaLandingPage() {
                   <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <div className="w-8 h-8 bg-secondary rounded-full"></div>
                   </div>
-                  <h3 className="text-xl font-semibold mb-3">טיפול מותאם</h3>
+                  <h3 className="text-xl font-semibold mb-3">תהליך מותאם</h3>
                   <p className="text-muted-foreground">
-                    כל טיפול מותאם אישית לצרכים הייחודיים שלך ולרמת העישון הנוכחית
+                    כל תהליך מותאם אישית לצרכים הייחודיים שלך ולרמת העישון הנוכחית
                   </p>
                 </CardContent>
               </Card>

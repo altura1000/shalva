@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
+
+const IS_PRODUCTION = true;
+
 const nextConfig = {
   output: 'export', // tells Next to make a static site in /out
-  basePath: '/shalva',       // repo name
-  assetPrefix: '/shalva',    // ensures CSS/img URLs work
+  basePath: IS_PRODUCTION ?  '/shalva' : "",       // repo name
+  assetPrefix: IS_PRODUCTION ?  '/shalva' : "",    // ensures CSS/img URLs work
   eslint: {
     ignoreDuringBuilds: true,
   },

@@ -4,20 +4,14 @@ import { Badge } from "@/components/ui/badge"
 import { Star, Phone, Mail, MessageCircle, Heart, Shield, Users, CheckCircle } from "lucide-react";
 import Image from "next/image";
 
+// 050 - 253 18 49
+
 const IS_PRODUCTION = true;
 const BASE = IS_PRODUCTION ? "/shalva" : "";
 
 export default function ShalvaLandingPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-          {/*
-          <Image 
-            src="/nav-photo.jpg" 
-            alt="My Photo" 
-            width={500} 
-            height={300} 
-          />
-          */}
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-bl from-card via-background to-card">
         {/* Background Image */}
@@ -36,10 +30,14 @@ export default function ShalvaLandingPage() {
               <span className="text-primary">שלווה</span> = נגמלים מעישון, חוזרים לנשום !
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-pretty">
-              שיטה טבעית וייחודית לגמילה מעישון באמצעות ריפוי באנרגיה של כפות הידיים
+              שיטה טבעית לגמילה מעישון באמצעות שימוש באנרגיה של כפות הידיים
               <br />
               ללא תרופות, ללא תופעות לוואי
+              <br></br> <br></br>
+              התהליך מתבצע בבית הנגמל
+
             </p>
+
 
             {/* Contact Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -50,59 +48,7 @@ export default function ShalvaLandingPage() {
                 <MessageCircle className="ml-2 h-5 w-5" />
                 יצירת קשר בוואטסאפ
                   </Button>
-
-              {/*
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg">
-                <MessageCircle className="ml-2 h-5 w-5" />
-                יצירת קשר בוואטסאפ
-              </Button>
-              
-              */}
-
-              
-
-              {/*
-              
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg bg-transparent"
-              >
-                
-                <Mail className="ml-2 h-5 w-5" />
-                שליחת מייל
-              </Button>
-              
-              */}
-
-
-              
             </div>
-
-            {/* Trust Badges */}
-            
-
-            {/*
-            <div className="flex flex-wrap justify-center gap-4">
-              <Badge variant="secondary" className="px-4 py-2 text-sm">
-                <Shield className="ml-2 h-4 w-4" />
-                ללא תופעות לוואי
-              </Badge>
-              <Badge variant="secondary" className="px-4 py-2 text-sm">
-                <Heart className="ml-2 h-4 w-4" />
-                מותאם אישית
-              </Badge>
-              <Badge variant="secondary" className="px-4 py-2 text-sm">
-                <Users className="ml-2 h-4 w-4" />
-                מאות סיפורי הצלחה
-              </Badge>
-            </div>
-            
-            */}
-            
-
-
-
           </div>
         </div>
       </section>
@@ -120,7 +66,7 @@ export default function ShalvaLandingPage() {
                   </div>
                   <h3 className="text-xl font-semibold mb-3">אנרגיה טבעית</h3>
                   <p className="text-muted-foreground">
-                    שימוש בכוח הריפוי הטבעי של כפות הידיים להעברת אנרגיה מרגיעה ומחזקת
+                    העברת אנרגיה מכפות הידיים לנגמל
                   </p>
                 </CardContent>
               </Card>
@@ -208,7 +154,7 @@ export default function ShalvaLandingPage() {
           <div className="max-w-3xl mx-auto space-y-6">
             <Card>
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-3">כמה טיפולים נדרשים?</h3>
+                <h3 className="text-xl font-semibold mb-3">כמה מפגשים נדרשים?</h3>
                 <p className="text-muted-foreground">
                   תוצאה מלאה כבר במפגש אחד.
                 </p>
@@ -219,7 +165,7 @@ export default function ShalvaLandingPage() {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-3">האם יש תופעות לוואי?</h3>
                 <p className="text-muted-foreground">
-                  לא. הטיפול טבעי לחלוטין ואינו כולל שימוש בתרופות או חומרים כימיים. התופעה היחידה היא הרגשת רגיעה
+                  לא. התהליך טבעי לחלוטין ואינו כולל שימוש בתרופות או חומרים כימיים. התופעה היחידה היא הרגשת רגיעה
                   ושלווה.
                 </p>
               </CardContent>
@@ -227,9 +173,9 @@ export default function ShalvaLandingPage() {
 
             <Card>
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-3">כמה זמן אורך טיפול?</h3>
+                <h3 className="text-xl font-semibold mb-3">כמה זמן אורך התהליך?</h3>
                 <p className="text-muted-foreground">
-                  טיפול בודד אורך כ-60 דקות, כולל שיחה אישית והטיפול עצמו. הזמן מותאם לצרכים האישיים של כל לקוח.
+                  תהליך בודד אורך כ-30 דקות, כולל שיחה אישית והתהליך עצמו. הזמן מותאם לצרכים האישיים של כל לקוח.
                 </p>
               </CardContent>
             </Card>
@@ -242,7 +188,7 @@ export default function ShalvaLandingPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">מוכנים להתחיל את המסע לחיים ללא עישון?</h2>
           <p className="text-xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-            הצעד הראשון הוא הקשה ביותר. אנחנו כאן לעזור לכם לעשות אותו בביטחון ובתמיכה מלאה.
+            הצעד הראשון הוא הקשה ביותר. אני כאן לעזור לכם לעשות אותו בביטחון ובתמיכה מלאה.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="px-8 py-4 text-lg">

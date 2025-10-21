@@ -1,16 +1,20 @@
+'use client';
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Star, Phone, Mail, MessageCircle, Heart, Shield, Users, CheckCircle } from "lucide-react";
+import { Star, Phone, CheckCircle } from "lucide-react";
 import Image from "next/image";
 import WhatsAppButton from "./wattsupButton";
-
-// 050 - 253 18 49
 
 const IS_PRODUCTION = true;
 const BASE = IS_PRODUCTION ? "/shalva" : "";
 
 export default function ShalvaLandingPage() {
+
+  const handleClick = () => {
+    window.location.href = "tel:+972502531849";
+  };
+  
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
@@ -36,27 +40,12 @@ export default function ShalvaLandingPage() {
               ללא תרופות, ללא תופעות לוואי
               <br></br> <br></br>
               התהליך מתבצע בבית הנגמל
-
             </p>
 
 
             {/* Contact Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-
                 <WhatsAppButton/>
-
-                {/* 
-                <Button
-                size="lg"
-                className="bg-[#25D366] hover:bg-[#20b955] text-white px-8 py-4 text-lg"
-                >
-                <MessageCircle className="ml-2 h-5 w-5" />
-                יצירת קשר בוואטסאפ
-                  </Button>
-                */}
-
-
-
             </div>
           </div>
         </div>
@@ -200,18 +189,11 @@ export default function ShalvaLandingPage() {
             הצעד הראשון הוא הקשה ביותר. אני כאן לעזור לכם לעשות אותו בביטחון ובתמיכה מלאה.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="px-8 py-4 text-lg">
+            <Button size="lg" variant="secondary" className="px-8 py-4 text-lg"  onClick={handleClick}>
               <Phone className="ml-2 h-5 w-5" />
               התקשרו עכשיו
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary px-8 py-4 text-lg bg-transparent"
-            >
-              <MessageCircle className="ml-2 h-5 w-5" />
-              שלחו הודעה
-            </Button>
+            <WhatsAppButton/>
           </div>
         </div>
       </section>
@@ -219,7 +201,7 @@ export default function ShalvaLandingPage() {
       {/* Footer */}
       <footer className="py-8 bg-card text-center">
         <div className="container mx-auto px-4">
-          <p className="text-muted-foreground">© 2024 שלווה - גמילה מעישון באנרגיה. כל הזכויות שמורות.</p>
+          <p className="text-muted-foreground">© 2025 שלווה - גמילה מעישון באנרגיה. כל הזכויות שמורות.</p>
         </div>
       </footer>
     </div>

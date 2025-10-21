@@ -1,6 +1,7 @@
 'use client';
 
 import { MessageCircle } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 
 export default function WhatsAppButton() {
@@ -18,7 +19,7 @@ export default function WhatsAppButton() {
       onClick = {() => handleClick()}
       className="bg-[#25D366] hover:bg-[#20b955] text-white px-8 py-4 text-lg"
     >
-      <MessageCircle className="ml-2 h-5 w-5" />
+      <FaWhatsapp className="ml-2 h-5 w-5" />
       יצירת קשר בוואטסאפ
     </Button>
   );

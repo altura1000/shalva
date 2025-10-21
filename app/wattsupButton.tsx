@@ -1,4 +1,4 @@
-'use client';
+/* 'use client';
 
 import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -22,4 +22,4 @@ export default function WhatsAppButton() {
       יצירת קשר בוואטסאפ
     </Button>
   );
-}
+}*/

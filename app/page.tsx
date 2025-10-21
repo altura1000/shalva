@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Star, Phone, Mail, MessageCircle, Heart, Shield, Users, CheckCircle } from "lucide-react";
 import Image from "next/image";
+import WhatsAppButton from "./wattsupButton";
 
 // 050 - 253 18 49
 
@@ -41,6 +42,10 @@ export default function ShalvaLandingPage() {
 
             {/* Contact Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+
+                <WhatsAppButton/>
+
+                {/* 
                 <Button
                 size="lg"
                 className="bg-[#25D366] hover:bg-[#20b955] text-white px-8 py-4 text-lg"
@@ -48,6 +53,10 @@ export default function ShalvaLandingPage() {
                 <MessageCircle className="ml-2 h-5 w-5" />
                 יצירת קשר בוואטסאפ
                   </Button>
+                */}
+
+
+
             </div>
           </div>
         </div>

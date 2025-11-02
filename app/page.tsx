@@ -7,7 +7,9 @@ import Image from "next/image";
 import WhatsAppButton from "./wattsupButton";
 
 const IS_PRODUCTION = true;
-const BASE = IS_PRODUCTION ? "/shalva" : "";
+let BASE = IS_PRODUCTION ? "/shalva" : "";
+
+BASE = "";
 
 export default function ShalvaLandingPage() {
 
